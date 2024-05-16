@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    border: 16px solid #EEEEEE;
+}
+
+.form h2 {
+    border-bottom: 8px solid #B4B4B4;
+}
