@@ -1,0 +1,17 @@
+.red-padding {
+    padding-left: 10px;
+    border-left: 6px solid red;
+    line-height: 1.6;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.mtb {
+    margin: 24px 0;
+}
+
+.mb {
+    margin-bottom: 16px;
+}
