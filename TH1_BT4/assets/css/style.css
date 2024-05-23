@@ -1,13 +1,60 @@
-* {
-    padding: 0;
+label {
+    display: inline-flex;
+    margin: 5px 25px;
+    text-align: left;
+    width: 150px;
+}
+
+.value {
+    display: inline-block;
+    width: 200px;
+}
+
+#name {
+    display: inline-table;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    text-align: left;
+    width: 170px;
 }
 
-.form {
-    border: 16px solid #EEEEEE;
+h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
-.form h2 {
-    border-bottom: 8px solid #B4B4B4;
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.employeeID, .lastname {
+    margin-left: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+button {
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: mediumslateblue;
+}
+
+input[type="text"], input[type="email"], input[type="datetime"], select, textarea {
+    width: 200px;
 }
