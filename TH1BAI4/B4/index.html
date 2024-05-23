@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            display: inline-flex;
+            margin: 5px 25px;
+            text-align: left;
+            width: 150px;
+        }
+
+        .value {
+            display: inline-block;
+            width: 200px;
+        }
+
+        #name {
+            display: inline-table;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            width: 170px;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        .radio-button {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+        }
+
+        .employeeID, .lastname {
+            margin-left: auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 25px;
+        }
+
+        button {
+            margin-left: 10px;
+            width: 100px;
+            height: 30px;
+            background-color: gray;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: mediumslateblue;
+        }
+
+        input[type="text"], input[type="email"], input[type="datetime"], select, textarea {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<form style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+    <h3>Basic Info</h3>
+    <hr>
+    <div>
+        <label>Employee ID</label>
+        <label class="employeeID">9</label>
+    </div>
+    <div>
+        <label for="lastname">Last Name</label>
+        <label class="lastname">Nguyễn Minh Chiến</label>
+    </div>
+    <div>
+        <label for="firstname">First Name</label>
+        <input type="text" id="name" value="Chiến">
+    </div>
+    <div style="display: flex;">
+        <label for="gender" style="align-items: center;">Gender</label>
+        <div class="radio-button">
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <label><input type="radio" name="gender" value="xxx">XXX</label>
+            <label><input type="radio" name="gender" value="zzz" checked>ZZZ</label>
+        </div>
+    </div>
+    <div>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" value="abc">
+    </div>
+    <div>
+        <label for="suffix">Suffix</label>
+        <input type="text" name="suffix" id="suffix" value="Mrs.">
+    </div>
+    <div>
+        <label for="birthdate">Birth Date</label>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+        <label for="hiredate">Hire Date</label>
+        <input type="date" name="hiredate" id="hiredate">
+    </div>
+    <div>
+        <label for="ssn">SSN</label>
+        <input type="text" name="ssn" id="ssn">
+    </div>
+    <div>
+        <label for="reportto">Report to</label>
+        <select id="reportto">
+            <option value="Buchanan">Buchanan</option>
+        </select>
+    </div>
+    <br>
+    <h3>Contact Info</h3><hr>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="name@example.com">
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+    </div>
+    <div>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+    </div>
+    <div>
+        <label for="region">Region</label>
+        <input type="text" name="region" id="region">
+    </div>
+    <div>
+        <label for="code">Postal Code</label>
+        <input type="text" name="code" id="code">
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="russia">Russian Federation</option>
+        </select>
+    </div>
+    <div>
+        <label for="phone">US Home Phone</label>
+        <input type="text" name="phone" id="phone">
+    </div>
+    <div>
+        <label for="photo">Photo</label>
+        <input type="file" id="photo">
+    </div>
+    <br>
+    <h3>Optional Info</h3>
+    <hr>
+    <div>
+        <label for="note">Notes</label>
+        <textarea name="note" id="note" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="shift">Preferred Shift</label>
+        <label><input type="checkbox" name="shift" value="regular">Regular</label>
+        <label><input type="checkbox" name="shift" value="graveyard" checked>Graveyard</label>
+    </div>
+    <div>
+        <label for="active">Active?</label>
+        <input type="checkbox" name="active" id="active" checked>
+    </div>
+    <div>
+        <label for="human">Are you human?</label>
+        <input type="text" name="human" id="human">
+    </div>
+    <br>
+    <hr>
+    <div class="button-container">
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+    </div>
+</form>
+</body>
+</html>
